@@ -2,7 +2,7 @@
 A simpile interface for turning a pre-indexed dial, using an Arudino Uno with a motor shield and a singular stepper motor.
 
 ## LabVIEW/Arudino Compatability ##
-Using the [Linx Libraries](https://www.labviewmakerhub.com/doku.php?id=libraries:linx:start) for LabVIEW, connecting the Uno to a computer becomes easy. A little bit of custom [firmware](Code/Arduino_Uno_Serial.ino) allows  
+Using the [Linx Libraries](https://www.labviewmakerhub.com/doku.php?id=libraries:linx:start) for LabVIEW, connecting the Uno to a computer becomes easy. A little bit of custom [firmware](src/Arduino_Uno_Serial.ino) allows  
 the addition of custom commands to the Uno, and can be accessed through LabVIEW.
 
 ### Planned Updates ###
