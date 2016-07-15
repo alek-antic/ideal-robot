@@ -49,15 +49,6 @@ void loop()
   //Your Code Here, But It will Slow Down The Connection With LabVIEW
 }
 
-int resetPos(unsigned char numInputBytes, unsigned char* input, unsigned char* numResponseBytes, unsigned char* response) {
-  int[] volts = new int[4]
-  for(;;){
-    stepClockwise();
-    volts[0] = analogRead(0);
-    volts[1] = analogRead(1);
-    volts[2] = analogRead(2);
-    volts[3] = analogRead(3);
-}
 
 /*
  * The method that interfaces with LabView in order to get the current and desired position of the knob
@@ -78,9 +69,20 @@ int stepMotor(unsigned char numInputBytes, unsigned char* steps, unsigned char* 
   *numResponseBytes = 1;
   
   response[0] = steps[1];
-  
+
+  //turns off PWM to motor, so that the spring in the knobs with discrete positions can auto-position the motor
+  analogWrite(3,0);
+  analogWrite(11,0);
   
   return 0;
+}
+
+int resetPos(unsigned char numInputBytes, unsigned char* input, unsigned char* numResponseBytes, unsigned char* response) {
+  while(true){
+    stepClockwise();
+    if (analogRead(0) + analogRead(1) > 2000)
+      break;
+  }
 }
 
 /*
