@@ -22,6 +22,7 @@
 //Create A Pointer To The LINX Device Object We Instantiate In Setup()
 LinxArduinoUno* LinxDevice;
 int stepMotor();
+int resetPos();
 
 //Initialize LINX Device And Listener
 void setup()
@@ -36,7 +37,8 @@ void setup()
   //The LINXT Listener Is Pre Instantiated, Call Start And Pass A Pointer To The LINX Device And The UART Channel To Listen On
   LinxSerialConnection.Start(LinxDevice, 0);  
 
-  LinxSerialConnection.AttachCustomCommand(0, stepMotor);
+  LinxSerialConnection.AttachCustomCommand(0, resetPos);
+  LinxSerialConnection.AttachCustomCommand(1, stepMotor);
 }
 
 void loop()
@@ -45,6 +47,16 @@ void loop()
   LinxSerialConnection.CheckForCommands();
 
   //Your Code Here, But It will Slow Down The Connection With LabVIEW
+}
+
+int resetPos(unsigned char numInputBytes, unsigned char* input, unsigned char* numResponseBytes, unsigned char* response) {
+  int[] volts = new int[4]
+  for(;;){
+    stepClockwise();
+    volts[0] = analogRead(0);
+    volts[1] = analogRead(1);
+    volts[2] = analogRead(2);
+    volts[3] = analogRead(3);
 }
 
 /*
