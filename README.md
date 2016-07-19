@@ -17,4 +17,4 @@ the addition of custom commands to the Uno, and can be accessed through LabVIEW.
 * [3D Printed Frame] (CAD)
 * [Module 0.4 42t Teeth 5mm bore gear](http://shop.sdp-si.com/catalog/product/?id=A_1P_2MYD04042C)
 * [64 DP, 42 Teeth, 1/8 Inch Bore gear](http://shop.sdp-si.com/catalog/product/?id=A_1P_2-Y64042A)
-* [Stepper Motor](http://www.zappautomation.co.uk/sy42sth47-1684b-high-torque-hybrid-stepper-motors.html)
+* [Stepper Motor, 200 steps per revolution, 2.8V, 1.68A, 44 N*cm holding torque](http://www.zappautomation.co.uk/sy42sth47-1684b-high-torque-hybrid-stepper-motors.html)
