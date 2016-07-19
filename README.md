@@ -6,7 +6,7 @@ Using the [Linx Libraries](https://www.labviewmakerhub.com/doku.php?id=libraries
 the addition of custom commands to the Uno, and can be accessed through LabVIEW.
 
 ### Planned Updates ###
-* Adjustable Increments For the knob
+* Adjustable increments for the knob
 * Upgraded UI
 * Adjustable angles
 * Replace dead-reckoning approach with an encoder/other sensor
