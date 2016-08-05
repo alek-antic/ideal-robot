@@ -12,9 +12,9 @@ the addition of custom commands to the Uno, and can be accessed through LabVIEW.
 * Replace dead-reckoning approach with an encoder/other sensor
 
 ## Parts Used ##
-* [Arudino Uno] (https://www.arduino.cc/en/Main/ArduinoBoardUno)
-* [Arudino Uno Motor Shield] (https://www.arrow.com/en/products/a000079/arduino-corporation?gclid=CjwKEAjwqpK8BRD7ua-U0orrgkESJADlN3YBQR4bFnq2o7nf6uNxl2OEvTBShy1X3md_8l63oy5e3xoCZYXw_wcB)
+* [Arudino Uno] (http://www.robotshop.com/en/arduino-uno-usb-microcontroller-rev-3.html)
+* [Arudino Uno Motor Shield] (http://www.robotshop.com/en/arduino-motor-shield-v3.html)
 * [3D Printed Frame] (CAD)
 * [Module 0.4 42t Teeth 5mm bore gear](http://shop.sdp-si.com/catalog/product/?id=A_1P_2MYD04042C)
 * [64 DP, 42 Teeth, 1/8 Inch Bore gear](http://shop.sdp-si.com/catalog/product/?id=A_1P_2-Y64042A)
-* [Stepper Motor, 200 steps per revolution, 2.8V, 1.68A, 44 N*cm holding torque](http://www.zappautomation.co.uk/sy42sth47-1684b-high-torque-hybrid-stepper-motors.html)
+* [Stepper Motor, 200 steps per revolution, 2.8V, 1.68A, 44 N*cm holding torque](http://www.robotshop.com/en/soyo-reprap-stepper-motor.html)
